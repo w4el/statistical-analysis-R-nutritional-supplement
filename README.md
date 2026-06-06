@@ -6,7 +6,7 @@ The analysis involves generating synthetic data, applying the correct hypothesis
 
 ## 1. Key Features
 
-* **Data Simulation:** Generates synthetic 'before' and 'after' datasets in R using `rnorm` (for mice) and `rweibull`, `rgamma`, and `rlnorm` (for rats).
+* **Data Simulation:** Generates synthetic 'before' and 'after' datasets in R using `rnorm` (for mice) and `rweibull` (for rats). `rgamma` and `rlnorm` are used for distribution fitting, not data generation.
 * **Hypothesis Testing:** Implements paired **t-tests** and **Wilcoxon signed-rank tests** to determine if the observed weight change is statistically significant.
 * **Distribution Fitting:** Analyses the post-treatment data to find the best-fit statistical distribution.
 * **Advanced Visualisation:** Uses R's plotting capabilities to create histograms, density plots, CDF plots, Q-Q plots, and P-P plots to visually validate the distribution fit.
@@ -20,7 +20,7 @@ The analysis involves generating synthetic data, applying the correct hypothesis
 
 1.  Clone the repository:
     `git clone https://github.com/w4el/statistical-analysis-R-nutritional-supplement.git`
-2.  Open the `.R` or `.Rmd` file in RStudio.
+2.  Open the `.R` file in RStudio.
 3.  Run the script from top to bottom to replicate the data generation, statistical tests, and plot creation.
 
 ## 4. Results
